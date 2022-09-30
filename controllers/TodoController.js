@@ -11,7 +11,11 @@ const TodoController = Router()
  * @param {string} description 
  */
 
+TodoController.get('/', async (req, res, next) => {
+     const add = await m$todo.listSensor()
 
+     response.sendResponse(res, add)
+})
 
 TodoController.post("/", async (req, res, next) => {
      const add = await m$todo.addKeluhan(req.body)

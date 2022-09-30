@@ -5,6 +5,26 @@ const Joi = require('joi')
 
 class _blog {
 
+     listSensor  = async () => {
+          try {
+               const list = await mysql.query(
+                    'SELECT * FROM tangkap_sensor_industry',
+                    []
+               )
+     
+               return {
+                    status : true,
+                    data: list
+               }
+          }  catch (error) {
+               console.error("list data sensor Error", error)
+               
+               return {
+                    status : false,
+                    error
+               }
+          }}
+
      addKeluhan = async (body) => {
           try {
                const schema = Joi.object({

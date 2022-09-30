@@ -3,6 +3,7 @@ const TodoController = require('./controllers/TodoController')
 // Define url API in Here
 const _routes = [
      ['/tes', TodoController]
+     //['/ambil', TodoController]
 ]
 
 // https://localhost:5001/tes
