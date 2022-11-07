@@ -4,7 +4,7 @@ const response = require("./helpers/response")
 const app = express()
 
 // This is the route the API will call
-const port = process.env.PORT ||  5010
+const port = process.env.PORT ||  40027
 
 // Serialize dan Deserialize Input
 app.use(express.json())
