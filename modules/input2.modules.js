@@ -25,7 +25,7 @@ class _blog {
                }
           }}
 
-     addKeluhan = async (body) => {
+     addSensor = async (body) => {
           try {
                const schema = Joi.object({
                     sensor1: Joi.number().required(),

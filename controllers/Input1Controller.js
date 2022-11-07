@@ -18,7 +18,7 @@ TodoController.get('/', async (req, res, next) => {
 })
 
 TodoController.post("/", async (req, res, next) => {
-     const add = await m$todo.addKeluhan(req.body)
+     const add = await m$todo.addSensor(req.body)
 
      response.sendResponse(res, add)
 })
