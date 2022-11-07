@@ -64,7 +64,7 @@ class _blog {
                }
 
           } catch (error) {
-               console.error("addTodo todo module Error: ", error)
+               console.error("addnilai sensor module Error: ", error)
 
                return {
                     status: false,
