@@ -8,7 +8,7 @@ class _blog {
      listSensor  = async () => {
           try {
                const list = await mysql.query(
-                    'SELECT * FROM tangkap_sensor_industry',
+                    'SELECT * FROM tangkap_sensor_industry_2',
                     []
                )
      
@@ -53,7 +53,7 @@ class _blog {
                }
           
                const add = await mysql.query(
-                    "INSERT INTO tangkap_sensor_industry(sensor1, sensor2, sensor3, sensor4, sensor5, sensor6) VALUES (?, ?, ?, ?, ?, ?)",
+                    "INSERT INTO tangkap_sensor_industry_2(sensor1, sensor2, sensor3, sensor4, sensor5, sensor6) VALUES (?, ?, ?, ?, ?, ?)",
 
                     [body.sensor1, body.sensor2, body.sensor3, body.sensor4, body.sensor5, body.sensor6]
                )

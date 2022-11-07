@@ -1,15 +1,9 @@
 const { Router } = require("express")
-const m$todo = require('../modules/input1.modules')
+const m$todo = require('../modules/input2.modules')
 const response = require('../helpers/response')
 
 const TodoController = Router()
 
-
-/**
- * Add Todo
- * @param {string} title
- * @param {string} description 
- */
 
 TodoController.get('/', async (req, res, next) => {
      const add = await m$todo.listSensor()
