@@ -11,11 +11,4 @@ SensorController.get('/', async (req, res, next) => {
      response.sendResponse(res, add)
 })
 
-SensorController.post("/", async (req, res, next) => {
-     const add = await m$todo.addSensor(req.body)
-
-     response.sendResponse(res, add)
-})
-
-
 module.exports = SensorController
