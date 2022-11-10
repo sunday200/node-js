@@ -70,7 +70,7 @@ class _blog {
                }
           
                const add = await mysql.query(
-                    "INSERT INTO tangkap_sensor_all(sensor1_adc, sensor2_adc, sensor3_adc, sensor4_adc, sensor5_adc, sensor6_adc, sensor1_res, sensor2_res, sensor3_res, sensor4_res, sensor5_res, sensor6_res, sensor1_ch4, sensor1_co, sensor1_h2, sensor2_co, sensor3_ch4,  sensor4_nh3, sensor5_h2, sensor6_co, sensor6_h2, sensor6_c4h10) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                    "INSERT INTO tangkap_sensor_all(sensor1_adc, sensor2_adc, sensor3_adc, sensor4_adc, sensor5_adc, sensor6_adc, sensor1_res, sensor2_res, sensor3_res, sensor4_res, sensor5_res, sensor6_res, sensor1_ch4, sensor1_co, sensor1_h2, sensor2_co, sensor3_ch4,  sensor4_nh3, sensor5_h2, sensor6_co, sensor6_h2, sensor6_c4h10) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 
                     [body.sensor1_adc, body.sensor2_adc, body.sensor3_adc, body.sensor4_adc, body.sensor5_adc, body.sensor6_adc, body.sensor1_res, body.sensor2_res, body.sensor2_res, body.sensor3_res, body.sensor4_res, body.sensor5_res, body.sensor6_res, body.sensor1_ch4, body.sensor1_co, body.sensor1_h2, body.sensor2_co, body.sensor3_ch4, body.sensor4_nh3, body.sensor5_h2, body.sensor6_co, body.sensor6_h2, body.sensor6_c4h10]
                )
