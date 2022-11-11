@@ -15,7 +15,7 @@ class _blog {
      
                return {
                     // status : true,
-                    data: list[0]['hasil']
+                    data: list
                }
           }  catch (error) {
                console.error("list data sensor Error", error)
