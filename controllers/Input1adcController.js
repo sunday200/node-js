@@ -1,5 +1,5 @@
 const { Router } = require("express")
-const m$todo = require('../modules/inputall1_real.modules')
+const m$todo = require('../modules/input1_adc.modules')
 const response = require('../helpers/response')
 
 const SensorController = Router()
