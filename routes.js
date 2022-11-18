@@ -3,6 +3,8 @@ const alat2Controller = require('./controllers/Input2Controller')
 const BuzzerController = require('./controllers/BuzzerController')
 const InputAll1Controller = require('./controllers/InputAll1Controller')
 const Input1adcController = require('./controllers/Input1adcController')
+const Input1resController = require('./controllers/Input1resController')
+const Input1ppmController = require('./controllers/Input1ppmController')
 const InputAll2RealController = require('./controllers/InputAll2RealController')
 const KlasifikasiController = require('./controllers/KlasifikasiController')
 
@@ -16,6 +18,8 @@ const _routes = [
      ['/alat-1-all', InputAll1Controller], // untuk alat-1 semua nilai
      ['/hasil-1', KlasifikasiController], // untuk coba coba
      ['/alat-1-adc', Input1adcController], // untuk alat 1 adc resistansi dan ppm (sementara dipakai untuk ambil dataset)
+     ['/alat-1-res', Input1resController], // untuk alat 1 adc resistansi dan ppm (sementara dipakai untuk ambil dataset)
+     ['/alat-1-ppm', Input1ppmController], // untuk alat 1 adc resistansi dan ppm (sementara dipakai untuk ambil dataset)
      ['/alat-2-fix', InputAll2RealController] // untuk alat 2 adc resistansi dan ppm (sementara dipakai untuk ambil dataser)
 
 ]
