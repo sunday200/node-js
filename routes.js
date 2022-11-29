@@ -34,7 +34,7 @@ const _routes = [
      ['/alat-2-ppm', Input2ppmController], // untuk alat 2 ppm (sementara dipakai untuk ambil dataset)
 
      ['/alat-carCO', InputCar1Controller], // CAR CO
-     ['/alat-car02', InputCar2Controller], // CAR 02
+     ['/alat-carO2', InputCar2Controller], // CAR 02
 
      ['/alat-2-fix', InputAll2RealController] // untuk alat 2 adc resistansi dan ppm (sementara dipakai untuk ambil dataser)
 
