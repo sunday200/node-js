@@ -10,6 +10,7 @@ const Input1roController = require('./controllers/Input1roController')
 const Input2adcController = require('./controllers/Input2adcController')
 const Input2resController = require('./controllers/Input2resController')
 const Input2ppmController = require('./controllers/Input2ppmController')
+const Input2roController = require('./controllers/Input2roController')
 
 const InputCar1Controller = require('./controllers/InputCar1Controller')
 const InputCar2Controller = require('./controllers/InputCar2Controller')
@@ -35,6 +36,7 @@ const _routes = [
      ['/alat-2-adc', Input2adcController], // untuk alat 2 adc(sementara dipakai untuk ambil dataset)
      ['/alat-2-res', Input2resController], // untuk alat 2 resistansi(sementara dipakai untuk ambil dataset)
      ['/alat-2-ppm', Input2ppmController], // untuk alat 2 ppm (sementara dipakai untuk ambil dataset)
+     ['/alat-2-ro', Input2roController], // untuk alat 2 ro (sementara dipakai untuk ambil dataset)
 
      ['/alat-carCO', InputCar1Controller], // CAR CO
      ['/alat-carO2', InputCar2Controller], // CAR 02
