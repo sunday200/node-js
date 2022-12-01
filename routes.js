@@ -5,6 +5,7 @@ const InputAll1Controller = require('./controllers/InputAll1Controller')
 const Input1adcController = require('./controllers/Input1adcController')
 const Input1resController = require('./controllers/Input1resController')
 const Input1ppmController = require('./controllers/Input1ppmController')
+const Input1roController = require('./controllers/Input1roController')
 
 const Input2adcController = require('./controllers/Input2adcController')
 const Input2resController = require('./controllers/Input2resController')
@@ -29,6 +30,8 @@ const _routes = [
      ['/alat-1-adc', Input1adcController], // untuk alat 1 adc (sementara dipakai untuk ambil dataset)
      ['/alat-1-res', Input1resController], // untuk alat 1 resistansi (sementara dipakai untuk ambil dataset)
      ['/alat-1-ppm', Input1ppmController], // untuk alat 1 ppm (sementara dipakai untuk ambil dataset)
+     ['/alat-1-ro', Input1roController], // untuk alat 1 ro (sementara dipakai untuk ambil dataset)
+
      ['/alat-2-adc', Input2adcController], // untuk alat 2 adc(sementara dipakai untuk ambil dataset)
      ['/alat-2-res', Input2resController], // untuk alat 2 resistansi(sementara dipakai untuk ambil dataset)
      ['/alat-2-ppm', Input2ppmController], // untuk alat 2 ppm (sementara dipakai untuk ambil dataset)
