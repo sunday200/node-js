@@ -7,10 +7,20 @@ const Input1resController = require('./controllers/Input1resController')
 const Input1ppmController = require('./controllers/Input1ppmController')
 const Input1roController = require('./controllers/Input1roController')
 
+const Input1ALKOHOLadcController = require('./controllers/Input1ALKOHOLadcController')
+const Input1ALKOHOLresController = require('./controllers/Input1ALKOHOLresController')
+const Input1ALKOHOLppmController = require('./controllers/Input1ALKOHOLppmController')
+const Input1ALKOHOLroController = require('./controllers/Input1ALKOHOLroController')
+
 const Input2adcController = require('./controllers/Input2adcController')
 const Input2resController = require('./controllers/Input2resController')
 const Input2ppmController = require('./controllers/Input2ppmController')
 const Input2roController = require('./controllers/Input2roController')
+
+const Input2ALKOHOLadcController = require('./controllers/Input2ALKOHOLadcController')
+const Input2ALKOHOLresController = require('./controllers/Input2ALKOHOLresController')
+const Input2ALKOHOLppmController = require('./controllers/Input2ALKOHOLppmController')
+const Input2ALKOHOLroController = require('./controllers/Input2ALKOHOLroController')
 
 const InputCar1Controller = require('./controllers/InputCar1Controller')
 const InputCar2Controller = require('./controllers/InputCar2Controller')
@@ -28,6 +38,21 @@ const _routes = [
      ['/alat-1-all', InputAll1Controller], // untuk alat-1 semua nilai
      ['/hasil-1', KlasifikasiController], // untuk coba coba
      
+     ['/alat-1-adc', Input1adcController], // untuk alat 1 adc (sementara dipakai untuk ambil dataset)
+     ['/alat-1-res', Input1resController], // untuk alat 1 resistansi (sementara dipakai untuk ambil dataset)
+     ['/alat-1-ppm', Input1ppmController], // untuk alat 1 ppm (sementara dipakai untuk ambil dataset)
+     ['/alat-1-ro', Input1roController], // untuk alat 1 ro (sementara dipakai untuk ambil dataset)
+
+     ['/1-alkohol-adc', Input1ALKOHOLadcController], // ini sampai baris ke 54 untuk ambil dataset alkohol
+     ['/1-alkohol-res', Input1ALKOHOLresController],
+     ['/1-alkohol-ppm', Input1ALKOHOLppmController], 
+     ['/1-alkohol-ro', Input1ALKOHOLroController], 
+
+     ['/2-alkohol-adc', Input2ALKOHOLadcController], 
+     ['/2-alkohol-res', Input2ALKOHOLresController],
+     ['/2-alkohol-ppm', Input2ALKOHOLppmController], 
+     ['/2-alkohol-ro', Input2ALKOHOLroController], 
+
      ['/alat-1-adc', Input1adcController], // untuk alat 1 adc (sementara dipakai untuk ambil dataset)
      ['/alat-1-res', Input1resController], // untuk alat 1 resistansi (sementara dipakai untuk ambil dataset)
      ['/alat-1-ppm', Input1ppmController], // untuk alat 1 ppm (sementara dipakai untuk ambil dataset)
