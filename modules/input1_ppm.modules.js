@@ -8,7 +8,7 @@ class _blog {
      listSensor  = async () => {
           try {
                const list = await mysql.query(
-                    'SELECT * FROM tangkap_sensor_1_ppm',
+                    'SELECT * FROM tangkap_sensor_1_ppm order by id desc limit 20',
                     []
                )
      

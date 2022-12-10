@@ -8,7 +8,7 @@ class _blog {
      listSensor  = async () => {
           try {
                const list = await mysql.query(
-                    'SELECT * FROM tangkap_sensor_2_ppm order by id desc limit 20',
+                    'SELECT * FROM tangkap_sensor_1_ppm order by id desc limit 1',
                     []
                )
      
@@ -53,7 +53,7 @@ class _blog {
                }
           
                const add = await mysql.query(
-                    "INSERT INTO tangkap_sensor_2_ppm(sensor1_ch4, sensor1_co, sensor1_h2, sensor2_co, sensor3_ch4,  sensor4_nh3, sensor5_h2, sensor6_co, sensor6_h2, sensor6_c4h10) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                    "INSERT INTO tangkap_sensor_1_ppm(sensor1_ch4, sensor1_co, sensor1_h2, sensor2_co, sensor3_ch4,  sensor4_nh3, sensor5_h2, sensor6_co, sensor6_h2, sensor6_c4h10) VALUES (?,?,?,?,?,?,?,?,?,?)",
 
                     [body.sensor1_ch4, body.sensor1_co, body.sensor1_h2, body.sensor2_co, body.sensor3_ch4, body.sensor4_nh3, body.sensor5_h2, body.sensor6_co, body.sensor6_h2, body.sensor6_c4h10]
                )
