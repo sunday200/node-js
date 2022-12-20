@@ -9,7 +9,7 @@ class _blog {
           try {
                const list = await mysql.query(
                     // 'SELECT * FROM tangkap_sensor_industry_2',
-                    'select * from `klasifikasi_industry` order by id desc limit 1',
+                    'select * from `klasifikasi_try_1` order by id desc limit 1',
                     []
                )
      

@@ -1,6 +1,7 @@
 const alat1Controller = require('./controllers/Input1Controller')
 const alat2Controller = require('./controllers/Input2Controller')
-const BuzzerController = require('./controllers/BuzzerController')
+const Buzzer1Controller = require('./controllers/Buzzer1Controller')
+const Buzzer2Controller = require('./controllers/Buzzer2Controller')
 const InputAll1Controller = require('./controllers/InputAll1Controller')
 const Input1adcController = require('./controllers/Input1adcController')
 const Input1resController = require('./controllers/Input1resController')
@@ -35,7 +36,8 @@ const KlasifikasiController = require('./controllers/KlasifikasiController')
 const _routes = [
      ['/alat-1', alat1Controller], // untuk alat 1
      ['/alat-2', alat2Controller], // untuk alat 2
-     ['/buzzer-1', BuzzerController], // untuk buzzer
+     ['/buzzer-1', Buzzer1Controller], // untuk buzzer alat 1
+     ['/buzzer-2', Buzzer2Controller], // untuk buzzer alat 2
      ['/alat-1-all', InputAll1Controller], // untuk alat-1 semua nilai
      ['/hasil-1', KlasifikasiController], // untuk coba coba
      
