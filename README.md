@@ -1,2 +1,1 @@
-# node-js
-repo ini untuk mencoba-coba
+# Repo untuk ambil data dari ESP32
